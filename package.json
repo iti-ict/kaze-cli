@@ -1,0 +1,48 @@
+{
+  "name": "kaze",
+  "version": "0.3.1",
+  "description": "SaaSDK Command Line Client",
+  "main": "index.js",
+  "bin": {
+    "kaze": "./build/src/kaze"
+  },
+  "scripts": {
+    "dist": "taskr dist",
+    "devbuild": "taskr build",
+    "lint": "taskr lint",
+    "prespec": "npm run lint",
+    "test": "taskr test ",
+    "clean": "taskr clean",
+    "superclean": "taskr superclean"
+  },
+  "author": "ITI",
+  "license": "MIT",
+  "devDependencies": {
+    "@taskr/clear": "^1.1.0",
+    "@taskr/shell": "^1.1.0",
+    "@taskr/typescript": "^1.1.0",
+    "@types/chalk": "^2.2.0",
+    "@types/commander": "^2.11.0",
+    "@types/express": "^4.0.35",
+    "@types/node": "^7.0.12",
+    "pkg": "^4.2.5",
+    "taskr": "^1.1.0",
+    "tslint": "^5.8.0",
+    "tslint-config-standard": "^6.0.1"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "commander": "^2.11.0",
+    "denodeify": "^1.2.1",
+    "read": "^1.0.7",
+    "workspace": "git+ssh://git@gitlab.iti.upv.es:saasdk/libs/workspace.git#radiatus"
+  },
+  "pkg": {
+    "scripts": [
+      "build/**/*.js"
+    ],
+    "assets": [
+      "node_modules/workspace/templates/**/*"
+    ]
+  }
+}
