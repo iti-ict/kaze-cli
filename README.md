@@ -8,7 +8,7 @@ The current version of **kaze-cli** code has some software dependencies that can
 
 ### Documentation
 
-In this [link]() you can find info about how to use kaze-cli tool.
+In this [link](docs/manual.pdf) you can find info about how to use kaze-cli tool.
 
 ### Disclaimer
 
