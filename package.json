@@ -1,5 +1,5 @@
 {
-  "name": "kaze",
+  "name": "kaze-cli",
   "version": "0.3.1",
   "description": "SaaSDK Command Line Client",
   "main": "index.js",
@@ -35,7 +35,7 @@
     "commander": "^2.11.0",
     "denodeify": "^1.2.1",
     "read": "^1.0.7",
-    "workspace": "git+ssh://git@gitlab.iti.upv.es:saasdk/libs/workspace.git#radiatus"
+    "kaze-core": "git+https://git@github.com/iti-ict/kaze-core.git#master"
   },
   "pkg": {
     "scripts": [
